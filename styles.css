@@ -1,0 +1,184 @@
+body {
+    font-family: "San Francisco", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the navigation bar */
+.navbar {
+    background-color: #0b0b0b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item {
+    margin-right: 45px;
+}
+
+.navbar-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles for the particle background */
+#particles-js {
+    height: 100vh;
+    background-color: #fcfafa;
+    position: relative;
+    overflow: hidden;
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+.particle-text{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #050000;
+    z-index: 1;
+}
+
+.particle-text h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.particle-text p {
+    font-size: 24px;
+}
+
+.social-buttons {
+    position: absolute;
+    bottom: 200px;
+    left: 13%;
+    transform: translateX(-50%);
+  }
+  
+  .social-button {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+.social-button:hover {
+    background-color: #ddd;
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Style for the image circle */
+.profile-image {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translate(0, -50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }  
+
+
+.corner-image {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+
+.corner-image img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+/* Additional styles for the rest of your website content */
+aside {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+main {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    margin-left: 200px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.project {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.aboutMePage{
+    height: 25;
+    width: 25;
+    top: 25px;
+    left: 50px;
+    font-size: 48;
+    margin-bottom: 10;
+    text-align: center;
+}
+
