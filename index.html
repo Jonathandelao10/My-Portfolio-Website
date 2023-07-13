@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Website with Navigation Bar and Particle Background</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="navbar-logo"></div>
+            <div class="corner-image">
+                <img src="logo1.png" alt="Corner Image">
+            </div>
+            <h1>Jonathan</h1>
+        </div>
+        <div class="navbar-right">
+            <h3><div class="navbar-item"><a href="#">Home</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">About</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">Skills</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">Experience</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">Contact</a></div></h3>
+        </div>
+    </div>
+
+    <!-- Particle background container -->
+    <div id="particles-js">
+        <div class="particle-text">
+            <div>
+                    <h2>Hi,</h2>
+                <h2>I'm Jonathan De la O</h2>
+                <p>Computer science student at Arizona State University</p>
+            </div>
+        </div>
+
+    <div class = "profile-image">
+        <img src="Graduation2.2.jpg" alt="Profile Image">
+    </div>
+
+    <!-- Social media buttons -->
+    <div class="social-buttons">
+        <a href="#"><div class="social-button"><img src="instagramLogo.png" alt="Instagram"></div></a>
+        <a href="#"><div class="social-button"><img src="linkedinLogo.png" alt="LinkedIn"></div></a>
+        <a href="#"><div class="social-button"><img src="githubLogo.png" alt="GitHub"></div></a>
+    </div>
+</div>
+
+
+    <!-- Include the particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Particle background configuration -->
+    <!-- Particle background configuration -->
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: {
+                value: 50,
+                density: {
+                    enable: true,
+                    value_area: 300
+                }
+            },
+            color: {
+                value: "#333" // Set the color of the particles to white
+            },
+            shape: {
+                type: "circle"
+            },
+        
+            size: {
+                value: 3
+            },
+            line_linked: {
+                enable: true,
+                distance: 150,
+                color: "#000000", // Set the color of the particle lines to black
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 3
+            }
+        },
+        interactivity: {
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "repulse"
+                }
+            }
+        },
+        retina_detect: true
+    });
+</script>
+
+
+    <!-- Rest of your website content goes here -->
+
+
+    <div>
+        <h2>About me</h2>
+    </div>
+
+    <div class = "aboutMe-image">
+        <img src="aboutMe.png" alt="aboutMe Image">
+    </div>
+
+</body>
+</html>
