@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Website with Navigation Bar and Particle Background</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-left">
             <div class="navbar-logo"></div>
             <div class="corner-image">
-                <img src="logo1.png" alt="Corner Image">
+                <img src="logo1.png" alt="Corner Image"> 
             </div>
-            <h1>Jonathan</h1>
+            <!--<h1>Jonathan</h1>-->
         </div>
         <div class="navbar-right">
-            <h3><div class="navbar-item"><a href="#">Home</a></div></h3>
-            <h3><div class="navbar-item"><a href="#">About</a></div></h3>
-            <h3><div class="navbar-item"><a href="#">Skills</a></div></h3>
-            <h3><div class="navbar-item"><a href="#">Experience</a></div></h3>
-            <h3><div class="navbar-item"><a href="#">Contact</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">HOME</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">ABOUT</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">SKILLS</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">EDUCATION</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">EXPERIENCE</a></div></h3>
+            <h3><div class="navbar-item"><a href="#">CONTACT</a></div></h3>
         </div>
     </div>
 
@@ -27,22 +30,23 @@
     <div id="particles-js">
         <div class="particle-text">
             <div>
-                    <h2>Hi,</h2>
-                <h2>I'm Jonathan De la O</h2>
-                <p>Computer science student at Arizona State University</p>
+                <h2>Jonathan De la O </h2>
+                <p>Computer science and Business Administration student at 
+                <span style="color: maroon; font-weight: bold;">Arizona </span>
+                <span style="color: gold; font-weight: bold;">State</span>
+                <span style="color: maroon; font-weight: bold;"> University </span></span></p>
+                <div class="aboutMe-button">
+                    <a href="#" class="button">ABOUT ME</a>
+                </div>
             </div>
         </div>
 
-    <div class = "profile-image">
-        <img src="Graduation2.2.jpg" alt="Profile Image">
-    </div>
+    <!--<div class = "profile-image">
+        <img src="BitEmoji2.jpg" alt="Profile Image">
+    </div>  -->
 
-    <!-- Social media buttons -->
-    <div class="social-buttons">
-        <a href="#"><div class="social-button"><img src="instagramLogo.png" alt="Instagram"></div></a>
-        <a href="#"><div class="social-button"><img src="linkedinLogo.png" alt="LinkedIn"></div></a>
-        <a href="#"><div class="social-button"><img src="githubLogo.png" alt="GitHub"></div></a>
-    </div>
+    <!-- About me button -->
+
 </div>
 
 
@@ -96,16 +100,35 @@
 </script>
 
 
-    <!-- Rest of your website content goes here -->
+    <!-- Rest of website content goes here -->
 
 
-    <div>
-        <h2>About me</h2>
+    <div class="aboutMePage">
+        <h2>ABOUT ME</div></h2>
     </div>
 
-    <div class = "aboutMe-image">
-        <img src="aboutMe.png" alt="aboutMe Image">
+    <div class="aboutMe-image">
+        <img src="Graduation2.2.jpg" alt="Image" class="rounded-circle">
     </div>
+    
+    <div class="aboutMe-text">
+        <h2>Hi, I am Jonathan</h2>
+        <h3>Software Engineer</h3>
+        <p>I am a current Junior student athlete majoring in Computer Science and Business Administration at Arizona State University.
+        My passion lies in solving problems with tailored data and communicating complex ideas to non-technical stakeholders.
+        I love learning new things and I am always looking to challenge myself. My areas of interest includes software Engineering, full-stack development,
+        data analysis and product management. I am actively looking for internships in the role of software engineer, full-stack developer, data analyst or 
+        product manager.</p>
 
+        <p class="email"><span style="color: maroon;">Email:</span> jddelao@asu.edu</p>
+
+        <div class="resumeButton">
+            <a href="#">
+              <div class="button-content">
+                <span>Resume</span>
+              </div>
+            </a>
+    </div>
+        
 </body>
 </html>
