@@ -14,6 +14,12 @@ body {
   align-items: center;
   padding: 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the viewport */
+  left: 0;
+  right: 0;
+  z-index: 9999; /* Add a high z-index to ensure the navbar stays above other content */
+  height: 6%;
   
 }
 
@@ -390,6 +396,7 @@ z-index: 1; /* Set a negative z-index to put it behind the content */
 .education{
 background-color: rgb(27, 26, 26);
 z-index: 1;
+padding-bottom: 100px;
 }
 
 .educationHeading{
@@ -477,12 +484,60 @@ font-weight: 700;
 
 /* Projects page */
 
-.projects{
+.projects {
 z-index: 1;
 }
 
-.projects h2{
+.projectsHeading h2 {
 text-align: center;
+}
+
+
+
+.projectBox {
+background-color: grey;
+border-radius: 2%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+width: 300px;
+height: 350px;
+margin-left: 4%;
+margin-top: 5%;
+}
+
+
+
+.projectBox img {
+width: 112%;
+height: 80px;
+object-fit:fill;
+border-radius: 5px;
+height: 80%;
+margin-top: -7%;
+margin-left: -3%;
+margin-right: -3%;
+
+}
+
+.projectBox p {
+margin: 0;
+text-align: left;
+font-size: 15px;
+font-weight: bold;
+}
+
+.Container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+gap: 20px;
+justify-content: center;
+margin-top: 20px;
+grid-auto-flow: column;
+
 }
 
 
