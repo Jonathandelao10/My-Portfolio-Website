@@ -511,22 +511,22 @@ margin-top: 5%;
 
 
 .projectBox img {
-width: 112%;
-height: 80px;
+width: 100%;
+height: 100%;
 object-fit:fill;
 border-radius: 5px;
-height: 80%;
-margin-top: -7%;
-margin-left: -3%;
-margin-right: -3%;
 
 }
 
 .projectBox p {
 margin: 0;
 text-align: left;
-font-size: 15px;
+font-size: 14px;
 font-weight: bold;
+}
+
+.techStack{
+text-align: left;
 }
 
 .Container {
