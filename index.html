@@ -333,66 +333,121 @@
 
    <!-- Experience and projects page -->
 
-   <section class="projects" id="projects">
-
-    <div class="projectsHeading">
-        <h2>MY PROJECTS</h2>
-
-        <div class="Container">
-            <div class="projectBox">
-                <img src="wineQualityPrediction.jpg" alt=" Image 1">
-                <h4>Wine Quality precition with ML models</h4>
-                <p>Developed a program that predicts the quality of wine using different machine learning algorithms such as K-means clustering, linear regression,
-                and decision tree classification.</p>
-                <p class="techStack">Tech Stack: Python & Jupyter Notebooks</p>
-            </div>
-            <div class="projectBox">
-                <img src="rapidRecovery.png" alt=" Image 2">
-                <h4>Rapid Recovery</h4>
-                <p>Designed a web application to assist in the recovery of Stroke Patients. The game helps in the development of the Fine Motor Skills(FMS) deactivated in the patients suffering from Stroke. </p>
-                <p class="techStack">Tech Stack: JavaScript, p5.js, Git</p>
-            </div>
-            <div class="projectBox">
-                <img src="vehicleSoftware.png" alt=" Image 3">
-                <h4>Vehicle Software</h4>
-                <p>Developed a software to simulate the operation of vehicles to compare the performance of traditional, electric and hybrid automobiles.</p>
-                <p class="techStack">Tech Stack: C++</p>
-            </div>
-            <div class="projectBox">
-                <img src="marioBros.png" alt=" Image 4">
-                <h4>Mario Bros Website</h4>
-                <p>Created a website based on the classic game "Mario Bros" using HTML, CSS and Javascript, wich is compatible with Laptops, desktops and other devices. </p>
-                <p class="techStack">Tech Stack: HTML, CSS, javascript</p>
-            </div>
-            <div class="projectBox">
-                <img src="phoneDirectory.png" alt=" Image 5">
-                <h3>Phone Directory</h3>
-                <p>Developed a phone directory that allows the user to create, show, insert, remove, store and find contacts in it. All this functions through the use of data structures.</p>
-                <p class="techStack">Tech Stack: C++</p>
-            </div>
-            <div class="projectBox">
-                <img src="portfolioWebsite.png" alt=" Image 6">
-                <h4>Portfolio Website</h4>
-                <p>Created a my responsive professional portfolio website using React JS, HTML, and CSS wich is compatible with Laptops, desktops and other devices.
-                    Hosted the website on GitHub servers using GitHub Actions for Continuous Integration & Continuous Delivery.
-                </p>
-                <p class="techStack">Tech Stack: React JS, HTML, CSS</p>
+   <section class="projects-section">
+    <div class="projects-heading">
+      <h2>MY PROJECTS</h2>
+    </div>
+    <div class="project-container">
+      <div class="project-item">
+        <div class="project-img">
+            <div id="tv">
+                <img src="wineQualityPrediction.jpg" alt="Project 1">
             </div>
         </div>
+        <div class="project-info">
+          <h3>Wine Quality prediction with ML models</h3>
+          <li>Developed a program that predicts the quality of wine using different machine learning algorithms such as K-means clustering,
+             linear regression, and decision tree classification.</li>
+             <li>In Pycharm and Jupyter Notebook, a program that takes the user input of all independent attributes was created in 
+                order to return the wine quality value from the push buttom.
+             </li>
+            <p>Tech Stack: Python & Jupiter Notebooks</p>
+        </div>
+      </div>
+      <div class="project-item flex-reverse">
+        <div class="project-img">
+          <img src="vehicleSoftware.png" alt="Project 2">
+        </div>
+        <div class="project-info">
+          <h3>Vehicle Software</h3>
+          <li>Developed a software to simulate the operation of vehicles to compare the performance of traditional, electric and hybrid automobiles.
+            Gives you the best option copmaring the performance of each of the vehicles. 
+          </li>
+          <li>The program has a class for  the customer to use, since it has functions that improves the customer experience when buying a car.</li>
+        <p>Tech Stack: C++</p>
+        </div>
+      </div>
+      <!-- Add more project items here (follow the same pattern as project 2) -->
+      <div class="project-item">
+        <div class="project-img">
+          <img src="phoneDirectory.png" alt="Project 3">
+        </div>
+        <div class="project-info">
+          <h3>Phone Directory</h3>
+          <li>Developed a phone directory that allows the user to create, show, insert, remove, store 
+            and find contacts in it. All this functions through the use of data structures.</li>
+            <p>Tech Stack: C++</p>
+        </div>  
+      </div>
+        <div class="project-item flex-reverse">
+            <div class="project-img">
+              <img src="rapidRecovery.png" alt="Project 4">
+            </div>
+            <div class="project-info">
+              <h3>Rapid Recovery</h3>
+              <li>Designed a web application to assist in the recovery of Stroke Patients. 
+                The game helps in the development of the Fine Motor Skills(FMS) deactivated in the patients suffering from Stroke.</p>
+            <p>Tech Stack: JavaScript, p5.js, Git</li>
+        </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+              <img src="marioBros.png" alt="Project 5">
+            </div>
+            <div class="project-info">
+              <h3>Mario Bros Website</h3>
+              <li>Created a website based on the classic game "Mario Bros" using HTML, CSS and Javascript, 
+                which is compatible with Laptops, desktops and other devices.</li>
+                <p>Tech Stack: HTML, CSS, javascript</p>
+            </div>  
+          </div>
+          <div class="project-item flex-reverse">
+            <div class="project-img">
+              <img src="portfolioWebsite.png" alt="Project 6">
+            </div>
+            <div class="project-info">
+              <h3>Portfolio Website</h3>
+              <li>Created a my responsive professional portfolio website using React JS, HTML, and CSS wich is compatible with Laptops, desktops and other devices. 
+                Hosted the website on GitHub servers using GitHub Actions for Continuous Integration & Continuous Delivery.</p>
+            <p>Tech Stack: React JS, HTML, CSS</li>
+        </div>
+        </div>
+    </div>
+  </section>
 
 
-
+  <section class="contactMe-section">
+    <div class="contactMe-heading">
+        <h2>CONTACT ME</h2>
+    </div>
+    <div class="contactMe-container">
+      <div class="nameBox">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Name">
+      </div>
+      <div class="emailBox">
+        <label for="Email"></label>
+        <input type="text" id="Email" name="Email" placeholder="Email">
+      </div>
+      <div class="subjectBox">
+        <label for="Subject"></label>
+        <input type="text" id="Subject" name="Subject" placeholder="Subject">
+      </div>
+      <div class="messageBox">
+        <label for="Message"></label>
+        <input type="text" id="Message" name="Message" placeholder="Message">
+      </div>
+      <div class="submitButton">
+        <a href="#">
+          <div class="button-content">
+            <span>Submit</span>
+          </div>
+        </a>
+    </div>
     </div>
 
-
-
-
-
-
-   </section>
-
-
-
-
+  </section>
+  
+  
 </body>
 </html>
