@@ -46,7 +46,29 @@ body {
 
 .navbar-item a {
   color: #fff;
-  text-decoration: none;
+  position: relative;
+}
+
+.navbar-item a span::before {
+content: '';
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 100%;
+height: 2px;
+background-color: #c62828; /* Change this color to maroon or any other desired color */
+visibility: hidden;
+transform: scaleX(0);
+transition: all 0.3s ease-in-out;
+}
+
+.navbar-item a:hover {
+text-decoration: none; /* Remove underline on hover */
+}
+
+.navbar-item a:hover span::before {
+visibility: visible;
+transform: scaleX(1);
 }
 
 /* Styles for the particle background */
@@ -106,6 +128,7 @@ letter-spacing: 0.1rem;
 }
 .aboutMe-button .button:hover{
   background: #0b0b0b;
+  text-decoration: none;
 }
 
 .aboutMe-button.button:hover i{
@@ -116,6 +139,30 @@ letter-spacing: 0.1rem;
   color: rgb(248, 247, 247);
   text-decoration: none;
 }  
+
+.aboutMe-button .button {
+  position: relative;
+}
+
+.aboutMe-button .button span::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c62828; /* Change this color to maroon or any other desired color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutMe-button .button:hover span::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
 
 
 
@@ -596,10 +643,11 @@ bottom: 10%;
 right: -5%;
 left: -5%;
 background: inherit;
-border-radius: 60% / 150%;
+border-radius: 3%;  
 object-fit:unset;
 margin-left: 20px;
 margin-right: 20px;
+
 }
 
 .flex-reverse {
@@ -751,24 +799,245 @@ margin-top: 20px;
 }
 
 /* Style for the button */
-.submitButton button {
-height: 50px;
+.submitButton span {
+height: 20px;
 width: 120px;
-background-color: rgb(193, 3, 3);
+background-color: rgb(110, 110, 110);
 color: white;
 padding: 10px 20px;
 border:none;
 border-radius: 0px;
 cursor:pointer;
 margin-bottom: 50px;
+text-align: center;
+}
+
+.submitButton:hover span{
+border: 1px solid black;
+color: black;
+background-color:white;
 }
 
 
-.submitButton:hover{
-border: 1px solid white;
-color:white;
+/* My information icons and text */
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Set the height of the container to cover the full viewport height */
+}
+
+.contactMe2-section {
+background-color: rgb(27, 26, 26);
+margin-top: -2%;
+display:flex;
+justify-content: space-around; /* Add space between the containers */
+flex-direction: column; /*To display the icons in vertical order */
+height: 400px;
+column-gap: 0px;
+}
+
+.myInformationContainer {
+color: white; /* Set the text color to white */
+padding: 20px;
+display: flex; /* Use flexbox to arrange the content inside each container */
+align-items: center; /* Center the content vertically */
+margin-bottom: 5%;
+margin-top: -5px;
+margin-right: -300px;
+position: relative;
+}
+
+
+.heading1 h5{ 
+position: relative;
+align-items: center;
+font-size:25px !important;
+top: 80px; /* Adjust the top value to move the text up */
+left: 80px; /* Align the text to the left */
+}
+
+.heading2 h5{
+position: relative;
+align-items: center;
+font-size:25px !important;
+top: 0px; /* Adjust the top value to move the text up */
+left: 0px; /* Align the text to the left */
+}
+
+.imageCircle {
+width: 100px;
+height: 100px;
+background-color: rgb(27, 26, 26); /* Set the desired background color for the circle */
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 20px; /* Add some spacing between the circle and the text */
+}
+
+.imageCircle1 img {
+max-width: 15%;
+max-height: 15%;
+border-radius: 50%;
+transform: translate(-305%, 350%);
+}
+
+.imageCircle2 img {
+max-width: 15%;
+max-height: 15%;
+border-radius: 50%;
+transform: translate(50%, 140%);
+}
+
+.imageCircle3 img {
+max-width: 15%;
+max-height: 15%;
+border-radius: 50%;
+transform: translate(50%, 5%);
+}
+
+
+
+
+.image-text1 {
+text-align: center; /* Align the text to the left side */
+margin-left: 10px; /* Add spacing between the image and text */
+font-size: 18px;
+transform: translate(-214%, 215%);
+}
+
+.image-text2 {
+text-align: center; /* Align the text to the left side */
+margin-left: 10px; /* Add spacing between the image and text */
+font-size: 18px;
+transform: translate(-127%, 80%);
+}
+
+.image-text3 {
+text-align: center; /* Align the text to the left side */
+margin-left: 10px; /* Add spacing between the image and text */
+font-size: 18px;
+transform: translate(-135%, -5%);
+}
+
+/* Add spacing between the image containers */
+.myInformationContainer {
+margin-bottom: 20px;
+}
+
+.contactMe2-section::before {
+content: "";
+position: absolute;
+top: 48.8%;
+bottom: 50%;
+left: 26%;
+width: 2px;
+height: 3.02%;
+background-color: maroon; /* Maroon color for the vertical line */
+transform: translate(900%, 1550%);
+align-items: center;
+}
+
+/* Quick Links design */
+.quick-links {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+}
+
+.quick-links h5 {
+margin-bottom: 50px; /* Add some spacing between "Quick Links" and the buttons */
+margin-top: 6100px;
+font-size:70%;
+}
+
+.quickLinksButtons {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+
+.quick-links-item {
+margin-bottom: 10px; /* Add spacing between the buttons */
+}
+
+.quick-links-item a {
+text-decoration: none;
+color: white;
+font-size: 18px;
+}
+
+.quick-links-item a:hover {
+color: maroon; /* Change the color on hover */
+}
+
+/* Maroon vertical line */
+.quick-links::before {
+content: "";
+position: absolute;
+top: 97.9%;
+left: 130%;
+transform: translateX(-50%);
+width: 2px;
+height: 3.02%;
 background-color: maroon;
 }
+
+
+/* Jonathan's portfolio section */
+
+.heading3 h5{
+position: relative;
+font-size:25px !important;
+top: -305px; /* Adjust the top value to move the text up */
+left: 930px; /* Align the text to the left */
+color: white;
+}
+
+.jonathanPortfolio p{
+color: white;
+float: right; /* Move the paragraph to the right */
+font-size: 18px; /* You can adjust the font size as needed */
+clear: both; /* Ensure the paragraph stays below the heading */
+max-width: 300px; /* Set a maximum width for the paragraph */
+margin-top: -320px;
+}
+
+.socialButtons {
+display: flex;
+justify-content: flex-end; /* Align the buttons to the right */
+margin-top: -200px; /* Add some spacing between the paragraph and the buttons */
+margin-left: 200px;
+}
+
+.social-button {
+display: grid;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: rgb(27, 26, 26); /* Facebook blue color */
+text-decoration: none;
+transition: background-color 0.3s ease;
+margin-right: 40px;
+margin-top: -10px;
+}
+
+
+.social-button img {
+width: 50px;
+height: 50px;
+}
+
+
+
+
 
 
 

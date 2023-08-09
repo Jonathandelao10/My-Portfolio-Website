@@ -17,12 +17,12 @@
             <!--<h1>Jonathan</h1>-->
         </div>
         <div class="navbar-right">
-            <h3><div class="navbar-item"><a href="#particles-js">HOME</a></div></h3>
-            <h3><div class="navbar-item"><a href="#aboutMe">ABOUT</a></div></h3>
-            <h3><div class="navbar-item"><a href="#skills-section">SKILLS</a></div></h3>
-            <h3><div class="navbar-item"><a href="#education">EDUCATION</a></div></h3>
-            <h3><div class="navbar-item"><a href="#projects">PROJECTS</a></div></h3>
-            <h3><div class="navbar-item"><a href="#">CONTACT</a></div></h3>
+            <h3><div class="navbar-item"><a href="#particles-js"><span>HOME</span></a></div></h3>
+            <h3><div class="navbar-item"><a href="#aboutMe"><span>ABOUT</span></a></div></h3>
+            <h3><div class="navbar-item"><a href="#skills-section"><span>SKILLS</span></a></div></h3>
+            <h3><div class="navbar-item"><a href="#education"><span>EDUCATION</span></a></div></h3>
+            <h3><div class="navbar-item"><a href="#projects"><span>PROJECTS</span></a></div></h3>
+            <h3><div class="navbar-item"><a href="contacMe"><span>CONTACT</span></a></div></h3>
         </div>
     </div>
 
@@ -36,7 +36,7 @@
                 <span style="color: gold; font-weight: bold;">State</span>
                 <span style="color: maroon; font-weight: bold;"> University </span></span></p>
                 <div class="aboutMe-button">
-                    <a href="#aboutMe" class="button">ABOUT ME</a>
+                    <a href="#aboutMe" class="button"><span>ABOUT ME</span></a>
                 </div>
             </div>
         </div>
@@ -333,7 +333,7 @@
 
    <!-- Experience and projects page -->
 
-   <section class="projects-section">
+   <section class="projects-section" id="projects">
     <div class="projects-heading">
       <h2>MY PROJECTS</h2>
     </div>
@@ -415,38 +415,112 @@
     </div>
   </section>
 
+  <!-- Contact me section -->
 
-  <section class="contactMe-section">
+
+  <section class="contactMe-section" id="contacMe">
     <div class="contactMe-heading">
-        <h2>CONTACT ME</h2>
+      <h2>CONTACT ME</h2>
     </div>
     <div class="contactMe-container">
-      <div class="nameBox">
-        <label for="username"></label>
-        <input type="text" id="username" name="username" placeholder="Name">
-      </div>
-      <div class="emailBox">
-        <label for="Email"></label>
-        <input type="text" id="Email" name="Email" placeholder="Email">
-      </div>
-      <div class="subjectBox">
-        <label for="Subject"></label>
-        <input type="text" id="Subject" name="Subject" placeholder="Subject">
-      </div>
-      <div class="messageBox">
-        <label for="Message"></label>
-        <input type="text" id="Message" name="Message" placeholder="Message">
-      </div>
-      <div class="submitButton">
-        <a href="#">
-          <div class="button-content">
-            <span>Submit</span>
-          </div>
-        </a>
+      <form method="post" action="send_email.php">
+        <div class="nameBox">
+          <label for="username"></label>
+          <input type="text" id="username" name="username" placeholder="Name">
+        </div>
+        <div class="emailBox">
+          <label for="Email"></label>
+          <input type="text" id="Email" name="Email" placeholder="Email">
+        </div>
+        <div class="subjectBox">
+          <label for="Subject"></label>
+          <input type="text" id="Subject" name="Subject" placeholder="Subject">
+        </div>
+        <div class="messageBox">
+          <label for="Message"></label>
+          <textarea id="Message" name="Message" placeholder="Message"></textarea>
+        </div>
+        <div class="submitButton">
+          <button type="submit">
+            <div class="button-content">
+              <span>Submit</span>
+            </div>
+          </button>
+        </div>
+      </form>
     </div>
+  </section>
+  
+
+
+  <!-- My contacts information -->
+  <section class="contactMe2-section">
+    <div class="myInformationContainer">
+        <div class="heading1">
+            <h5>Contact Me</h5>
+        </div>
+      <div class="imageCircle1">
+        <img src="arroba (1).png" alt="Image 1">
+      </div>
+      <div class="image-text1">
+        <p>jddelao@asu.edu</p>
+      </div>
+    </div>
+  
+    <div class="myInformationContainer">
+      <div class="imageCircle2">
+        <img src="phone-call.png" alt="Image 2">
+      </div>
+      <div class="image-text2">
+        <p>+1 (316) XXX-XXX</p>
+      </div>
+    </div>
+  
+    <div class="myInformationContainer">
+      <div class="imageCircle3">
+        <img src="gps.png" alt="Image 3">
+      </div>
+      <div class="image-text3">
+        <p>Tempe, Arizona</p>
+      </div>
+    </div>
+
+    <div class="quick-links">
+        <div class="heading2">
+            <h5>Quick Links</h5>
+        </div>
+        <div class="quickLinksButtons">
+            <h3><div class="quick-links-item"><a href="#particles-js"><span>HOME</span></a></div></h3>
+            <h3><div class="quick-links-item"><a href="#aboutMe"><span>ABOUT</span></a></div></h3>
+            <h3><div class="quick-links-item"><a href="#skills-section"><span>SKILLS</span></a></div></h3>
+            <h3><div class="quick-links-item"><a href="#education"><span>EDUCATION</span></a></div></h3>
+            <h3><div class="quick-links-item"><a href="#projects"><span>PROJECTS</span></a></div></h3>
+            <h3><div class="quick-links-item"><a href="contacMe"><span>CONTACT</span></a></div></h3>
+        </div>
+    </div>
+
+    <div class="jonathanPortfolio">
+        <div class="heading3">
+            <h5>Jonathan's Portfolio</h5>
+        </div>
+        <p>Thank you for visiting my personal portfolio website. Please, feel free to connect with me over socials.</p>
+        <div class="socialButtons">
+            <a href="#" class="social-button" id="linkedin-button">
+                <img src="linkedin (1).png" alt="Linkedin">
+              </a>
+              <a href="#" class="social-button" id="github-button">
+                <img src="github (1).png" alt="Github">
+              </a>
+              <a href="#" class="social-button" id="instagram-button">
+                <img src="instagram (1).png" alt="Instagram">
+              </a>
+        </div>
+
     </div>
 
   </section>
+  
+
   
   
 </body>
