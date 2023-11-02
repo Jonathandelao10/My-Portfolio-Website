@@ -293,7 +293,7 @@ font-size: 20px;
 color: white;
 top: 50%;
 left: 50%;
-transform: translate(-33%, -60%);
+transform: translate(-27%, -60%);
 }
 
 .aboutMe-text p {
@@ -655,37 +655,27 @@ flex-direction: row-reverse;
 
 }
 
-
-
 /* Contact me page */
 
 .contactMe-section{
 background-color: rgb(27, 26, 26);
+display:flexbox;
+justify-content: center;
+align-items: center;
 }
 
-.contactMe-heading {
-text-align: center;
-position: relative; /* Set position to relative */
+
+.contactMe-container{
+margin-top: 5%;
 }
 
 .contactMe-heading h2 {
 color: rgb(255, 255, 255);
 margin-top: 20px; /* Adjust this value as needed */
 position: relative; /* Set position to relative */
-top: 50px; /* Adjust this value to move the text down */
+top: 20px; /* Adjust this value to move the text down */
 font-size: 30px;
-}
-
-.contactMe-heading::after {
-content: '';
-display: block;
-width: 100px;
-height: 2px;
-background-color: maroon;
-position: absolute;
-bottom: -60px; /* Adjust this value to control the position of the line */
-left: 50%;
-transform: translateX(-50%);
+text-align: center;
 }
 
 .contactMe-container{
@@ -701,7 +691,7 @@ width: 600px; /* Set the desired width of the box */
 height: 30px;
 border: 1px solid; /* Set the border color to maroon */
 padding: 10px; /* Add some padding to the box */
-margin-top: 90px;
+margin-top: -90px;
 }
 
 .nameBox input {
@@ -726,7 +716,7 @@ width: 600px; /* Set the desired width of the box */
 height: 30px;
 border: 1px solid; /* Set the border color to maroon */
 padding: 10px; /* Add some padding to the box */
-margin-top:-20px;
+margin-top:20px;
 }
 .emailBox input {
 width: 100%; /* Make the input element take up the full width of the parent container */
@@ -749,7 +739,7 @@ width: 600px; /* Set the desired width of the box */
 height: 30px;
 border: 1px solid; /* Set the border color to maroon */
 padding: 10px; /* Add some padding to the box */
-margin-top: -20px;
+margin-top: 20px;
 }
 .subjectBox input {
 width: 100%; /* Make the input element take up the full width of the parent container */
@@ -772,7 +762,7 @@ width: 600px; /* Set the desired width of the box */
 height: 100px;
 border: 1px solid; /* Set the border color to maroon */
 padding: 10px; /* Add some padding to the box */
-margin-top: -20px;
+margin-top: 20px;
 }
 .messageBox input {
 width: 100%; /* Make the input element take up the full width of the parent container */
@@ -791,31 +781,27 @@ opacity: 0.5; /* Set the opacity of the placeholder text */
 
 /* Submit button */
 
-/* Style for the button container */
-.submit-button {
+
+.button-container {
 display: flex;
 justify-content: center;
-margin-top: 20px;
+margin-top: 90px;
+
 }
 
 /* Style for the button */
-.submitButton span {
-height: 20px;
-width: 120px;
+.submitButton button {
 background-color: rgb(110, 110, 110);
-color: white;
-padding: 10px 20px;
-border:none;
+color: rgb(216, 215, 215);
+padding: 10px 50px;
 border-radius: 0px;
-cursor:pointer;
-margin-bottom: 50px;
-text-align: center;
+border: none;
 }
 
-.submitButton:hover span{
+.submitButton button:hover {
 border: 1px solid black;
 color: black;
-background-color:white;
+background-color: white;
 }
 
 
@@ -858,11 +844,13 @@ top: 80px; /* Adjust the top value to move the text up */
 left: 80px; /* Align the text to the left */
 }
 
+/* Quick links heading */
+
 .heading2 h5{
 position: relative;
 align-items: center;
 font-size:25px !important;
-top: 0px; /* Adjust the top value to move the text up */
+top: -40px; /* Adjust the top value to move the text up */
 left: 0px; /* Align the text to the left */
 }
 
@@ -927,32 +915,37 @@ transform: translate(-135%, -5%);
 margin-bottom: 20px;
 }
 
+/* Vertical maroon line before quick links */
+
 .contactMe2-section::before {
 content: "";
 position: absolute;
-top: 48.8%;
+top: 39%;
 bottom: 50%;
 left: 26%;
 width: 2px;
-height: 3.02%;
+height:3.6%;
 background-color: maroon; /* Maroon color for the vertical line */
 transform: translate(900%, 1550%);
 align-items: center;
 }
 
 /* Quick Links design */
+
+/* Quick links block */ 
+
 .quick-links {
 position: absolute;
-top: 50%;
+top: 51.5%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%, 320%);
 text-align: center;
 color: white;
 }
 
 .quick-links h5 {
-margin-bottom: 50px; /* Add some spacing between "Quick Links" and the buttons */
-margin-top: 6100px;
+margin-bottom: 20px; /* Add some spacing between "Quick Links" and the buttons */
+margin-top: 500px;
 font-size:70%;
 }
 
@@ -972,20 +965,33 @@ color: white;
 font-size: 18px;
 }
 
-.quick-links-item a:hover {
-color: maroon; /* Change the color on hover */
-}
 
-/* Maroon vertical line */
+
+/* Maroon vertical line after quick links*/
 .quick-links::before {
 content: "";
 position: absolute;
-top: 97.9%;
+top: 75%;
 left: 130%;
 transform: translateX(-50%);
 width: 2px;
-height: 3.02%;
+height: 33%;
 background-color: maroon;
+}
+
+.quick-links-item a {
+text-decoration: none;
+color: white;
+font-size: 18px;
+background-image: linear-gradient(to right, transparent 0%, transparent 100%);
+background-repeat: no-repeat;
+background-size: 100% 2px; /* Adjust the height of the underline */
+transition: background-size 0.3s;
+}
+
+.quick-links-item a:hover {
+background-size: 0 2px; /* Reduce the background size to create the maroon underline effect */
+color: maroon; /* Change the text color to maroon on hover */
 }
 
 
@@ -999,7 +1005,20 @@ left: 930px; /* Align the text to the left */
 color: white;
 }
 
+/* Horizontal Maroon line below contact me */
+
+.heading3 h5::after {
+content: '';
+position:absolute;
+transform: translateX(-510%);
+bottom: 60px; /* Adjust the distance between the text and the line */
+width: 10%;
+height: 2px; /* Adjust the height of the line */
+background-color: maroon;
+}
+
 .jonathanPortfolio p{
+position:relative;
 color: white;
 float: right; /* Move the paragraph to the right */
 font-size: 18px; /* You can adjust the font size as needed */
@@ -1009,6 +1028,7 @@ margin-top: -320px;
 }
 
 .socialButtons {
+position: relative;
 display: flex;
 justify-content: flex-end; /* Align the buttons to the right */
 margin-top: -200px; /* Add some spacing between the paragraph and the buttons */
@@ -1016,7 +1036,7 @@ margin-left: 200px;
 }
 
 .social-button {
-display: grid;
+display:grid;
 justify-content: center;
 align-items: center;
 width: 50px;
