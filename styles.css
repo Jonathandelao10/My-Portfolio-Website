@@ -378,7 +378,7 @@ position:relative;
 text-align: center;
 margin-top: 20px;
 font-size:30px;
-margin-top: 3%;
+margin-top: 5%;
 position: relative;
 }
 
@@ -397,11 +397,11 @@ transform: translateX(-50%);
 
 .blurred-box {
 width: 850px;
-height: 800px;
+height: 900px;
 background-color: rgba(7, 7, 7, 0.7);
 display:grid;
 grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(4,1fr);
+grid-template-rows: repeat(5,1fr);
 gap: 10px;
 padding: 20px;
 border-radius: 5%;
@@ -850,7 +850,15 @@ left: 80px; /* Align the text to the left */
 position: relative;
 align-items: center;
 font-size:25px !important;
-top: -40px; /* Adjust the top value to move the text up */
+top:-20px; /* Adjust the top value to move the text up */
+left: 0px; /* Align the text to the left */
+}
+
+.heading2 h3{
+position: relative;
+align-items: center;
+font-size:25px !important;
+top:30px; /* Adjust the top value to move the text up */
 left: 0px; /* Align the text to the left */
 }
 
@@ -943,9 +951,10 @@ text-align: center;
 color: white;
 }
 
+
 .quick-links h5 {
 margin-bottom: 20px; /* Add some spacing between "Quick Links" and the buttons */
-margin-top: 500px;
+margin-top: 510px;
 font-size:70%;
 }
 
